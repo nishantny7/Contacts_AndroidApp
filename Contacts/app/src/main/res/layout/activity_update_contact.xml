@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateContact">
+
+
+    <ImageView
+        android:id="@+id/image_editContact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/edit_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:id="@+id/image_editName"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/image_editContact"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/contact_name"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:id="@+id/editText_editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_editContact"
+        android:layout_toRightOf="@id/image_editName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/image_editName"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/image_editNumber"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/editText_editName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/contact_number"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:id="@+id/editText_editNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_editName"
+        android:layout_toRightOf="@id/image_editNumber"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/image_editNumber"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/image_editEmail"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/editText_editNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/contact_email"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:id="@+id/editText_editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_editNumber"
+        android:layout_toRightOf="@id/image_editEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/image_editEmail"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        android:id="@+id/image_editOrg"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/editText_editEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/contact_organisation"
+        android:layout_marginStart="25dp" />
+
+    <EditText
+        android:id="@+id/editText_editOrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_editEmail"
+        android:layout_toRightOf="@id/image_editOrg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/image_editOrg"
+        android:layout_marginStart="10dp"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_editOrg"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:background="@drawable/rounded_corners" />
+
+
+
+
+
+
+</RelativeLayout>

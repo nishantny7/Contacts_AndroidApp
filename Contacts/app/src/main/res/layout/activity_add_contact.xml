@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContact">
+
+    <Button
+        android:id="@+id/button_add_contact"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@id/editText_organisation"
+        android:layout_marginBottom="181dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/add_contact" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="86dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="171dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_number"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_name"
+        android:layout_alignStart="@id/editText_name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="251dp"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_organisation"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_name"
+        android:layout_alignParentTop="false"
+        android:layout_alignStart="@id/editText_name"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="406dp"
+        android:ems="10"
+        android:hint="Organisation"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_name"
+        android:layout_alignStart="@id/editText_name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="333dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <ImageView
+        android:id="@+id/contact_email"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@id/editText_email"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/contact_email" />
+
+    <ImageView
+        android:id="@+id/contacct_organisation"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@id/editText_organisation"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/contact_organisation" />
+
+    <ImageView
+        android:id="@+id/contact_number"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@id/editText_number"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/contact_number" />
+
+    <ImageView
+        android:id="@+id/contact_name"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@id/editText_name"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/contact_name" />
+
+    <ImageView
+        android:id="@+id/add_contact"
+        android:layout_width="128dp"
+        android:layout_height="136dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/add_contact_image" />
+
+</RelativeLayout>
